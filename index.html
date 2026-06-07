@@ -3,107 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riski Jonaidi, S.Akun | Portfolio</title>
+
+<title>Riski Jonaidi, S.Akun | Finance & Accounting Staff</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7fa;
-color:#333;
-line-height:1.6;
+background:#f8fafc;
+color:#1e293b;
 }
 
-header{
+.hero{
 background:linear-gradient(135deg,#0f172a,#1e3a8a);
 color:white;
-padding:60px 20px;
+padding:70px 20px;
+}
+
+.hero-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:50px;
+}
+
+.profile{
 text-align:center;
 }
 
-.profile-img{
-width:180px;
-height:180px;
-object-fit:cover;
+.profile img{
+width:230px;
+height:230px;
 border-radius:50%;
-border:5px solid white;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-margin-bottom:20px;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
-header h1{
-font-size:40px;
+.info{
+max-width:650px;
+}
+
+.info h1{
+font-size:48px;
+font-weight:800;
 margin-bottom:10px;
 }
 
-header p{
-font-size:20px;
-opacity:0.9;
+.info h2{
+font-size:24px;
+font-weight:500;
+color:#cbd5e1;
+margin-bottom:10px;
 }
 
-.buttons{
-margin-top:25px;
+.location{
+font-size:16px;
+margin-bottom:20px;
+color:#e2e8f0;
+}
+
+.about{
+font-size:16px;
+line-height:1.8;
+margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 24px;
+padding:12px 25px;
 margin:5px;
-border-radius:30px;
+border-radius:50px;
 text-decoration:none;
-font-weight:bold;
-transition:0.3s;
+font-weight:600;
+transition:.3s;
 }
 
-.btn-primary{
-background:#ffffff;
+.cv{
+background:white;
 color:#1e3a8a;
 }
 
-.btn-primary:hover{
-transform:translateY(-3px);
-}
-
-.btn-secondary{
-background:#22c55e;
+.linkedin{
+background:#0a66c2;
 color:white;
 }
 
-.btn-secondary:hover{
+.whatsapp{
+background:#25d366;
+color:white;
+}
+
+.btn:hover{
 transform:translateY(-3px);
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:30px 20px;
+.stats{
+max-width:1200px;
+margin:-40px auto 40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:0 20px;
 }
 
-.card{
+.stat-card{
 background:white;
-padding:30px;
-margin-bottom:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+padding:25px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-h2{
+.stat-card h3{
+font-size:28px;
 color:#1e3a8a;
-margin-bottom:15px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px 40px;
+}
+
+.section{
+background:white;
+padding:35px;
+border-radius:20px;
+margin-bottom:25px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.section h2{
+color:#1e3a8a;
+margin-bottom:20px;
+font-size:28px;
 }
 
 .timeline{
-border-left:4px solid #1e3a8a;
+border-left:4px solid #2563eb;
 padding-left:20px;
 }
 
 .timeline-item{
 margin-bottom:25px;
+}
+
+.timeline-item h3{
+color:#0f172a;
 }
 
 .skills{
@@ -113,10 +172,25 @@ gap:15px;
 }
 
 .skill{
-background:#eef2ff;
+background:#eff6ff;
 padding:15px;
-border-radius:10px;
+border-radius:12px;
 font-weight:600;
+}
+
+.achievement{
+background:#f8fafc;
+padding:15px;
+border-radius:12px;
+margin-bottom:12px;
+}
+
+.open{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+text-align:center;
+padding:30px;
+border-radius:20px;
 }
 
 footer{
@@ -124,103 +198,140 @@ background:#0f172a;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:30px;
-}
-
-.contact p{
-margin-bottom:10px;
+margin-top:40px;
 }
 
 @media(max-width:768px){
-header h1{
-font-size:30px;
+
+.info h1{
+font-size:34px;
 }
+
+.info h2{
+font-size:20px;
 }
+
+.profile img{
+width:180px;
+height:180px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
+<section class="hero">
 
-<img src="Riski_Jonaidi.jpg.png" alt="Riski Jonaidi" class="profile-img">
+<div class="hero-container">
+
+<div class="profile">
+<img src="Riski_Jonaidi.jpg.png" alt="Riski Jonaidi">
+</div>
+
+<div class="info">
 
 <h1>Riski Jonaidi, S.Akun</h1>
 
-<p>Finance & Accounting Staff | Administrasi Keuangan | Akuntansi</p>
+<h2>Finance & Accounting Staff | Tax & Financial Administration</h2>
 
-<div class="buttons">
-<a class="btn btn-primary"
+<div class="location">
+📍 Padang, Lubuk Minturun, Koto Tangah
+</div>
+
+<div class="about">
+Lulusan S1 Akuntansi Syariah UIN Imam Bonjol Padang dengan IPK 3,67. Memiliki pengalaman bekerja sebagai Finance & Accounting Staff di JNE Express. Berpengalaman dalam pengelolaan petty cash, non-petty cash, rekonsiliasi bank, cash flow, penjurnalan, dan penyusunan laporan keuangan. Menguasai Microsoft Dynamics AX, Microsoft Excel, Accurate, dan MYOB.
+</div>
+
+<a class="btn cv" href="CV%20Riski%20Jonaidi_Akt..pdf" target="_blank">
+📄 Download CV
+</a>
+
+<a class="btn linkedin"
 href="https://www.linkedin.com/in/riski-jonaidi-8a0683337"
 target="_blank">
 LinkedIn
 </a>
 
-<a class="btn btn-secondary"
+<a class="btn whatsapp"
 href="https://wa.me/628527292732"
 target="_blank">
 WhatsApp
 </a>
 
-<a class="btn btn-primary"
-href="CV%20Riski%20Jonaidi_Akt..pdf"
-target="_blank">
-Download CV
-</a>
 </div>
 
-</header>
+</div>
+
+</section>
+
+<div class="stats">
+
+<div class="stat-card">
+<h3>1+ Tahun</h3>
+<p>Pengalaman</p>
+</div>
+
+<div class="stat-card">
+<h3>3.67</h3>
+<p>IPK</p>
+</div>
+
+<div class="stat-card">
+<h3>Finance</h3>
+<p>& Accounting</p>
+</div>
+
+<div class="stat-card">
+<h3>Dynamics AX</h3>
+<p>Microsoft ERP</p>
+</div>
+
+</div>
 
 <div class="container">
 
-<div class="card">
+<div class="section">
 <h2>Tentang Saya</h2>
 
 <p>
-Lulusan S1 Akuntansi Syariah UIN Imam Bonjol Padang dengan IPK 3,67.
-Saat ini bekerja sebagai Finance & Accounting Staff di JNE Express.
-Berpengalaman dalam pengelolaan petty cash, non-petty cash,
-rekonsiliasi bank, cash flow, penjurnalan, dan penyusunan laporan
-keuangan. Menguasai Microsoft Dynamics AX, Microsoft Excel,
-Accurate, dan MYOB.
+Lulusan S1 Akuntansi Syariah UIN Imam Bonjol Padang dengan IPK 3,67. Memiliki pengalaman bekerja sebagai Finance & Accounting Staff di JNE Express. Berpengalaman dalam pengelolaan petty cash, non-petty cash, rekonsiliasi bank, cash flow, penjurnalan, dan penyusunan laporan keuangan. Menguasai Microsoft Dynamics AX, Microsoft Excel, Accurate, dan MYOB.
 </p>
+
 </div>
 
-<div class="card">
+<div class="section">
+
 <h2>Pengalaman Kerja</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
-<h3>Finance & Accounting Staff</h3>
-<strong>JNE Express Padang</strong><br>
-Februari 2025 – Sekarang
 
-<ul>
-<li>Mengelola petty cash dan non-petty cash operasional.</li>
-<li>Melakukan penjurnalan transaksi pada Microsoft Dynamics AX.</li>
+<h3>Finance & Accounting Staff</h3>
+
+<strong>JNE Express Padang</strong><br>
+
+Februari 2025 – Mei 2026
+
+<ul style="margin-top:10px;">
+<li>Mengelola dana operasional melalui petty cash dan non-petty cash.</li>
+<li>Melakukan penjurnalan transaksi menggunakan Microsoft Dynamics AX.</li>
 <li>Menyusun laporan cash count dan rekonsiliasi dana.</li>
 <li>Menyusun laporan mutasi bank dan rekonsiliasi bank bulanan.</li>
 <li>Menyusun laporan keuangan dan proses closing.</li>
 </ul>
-</div>
-
-<div class="timeline-item">
-<h3>Magang Akuntansi Lembaga</h3>
-<strong>BPKAD Pesisir Selatan</strong><br>
-Maret 2018 – Agustus 2018
-
-<ul>
-<li>Mengolah data keuangan menggunakan Microsoft Excel.</li>
-<li>Membantu proses pencairan dana daerah.</li>
-<li>Mengelola dan mengarsipkan dokumen keuangan.</li>
-</ul>
 
 </div>
-</div>
+
 </div>
 
-<div class="card">
+</div>
+
+<div class="section">
+
 <h2>Pendidikan</h2>
 
 <p>
@@ -238,7 +349,8 @@ Akuntansi Keuangan (2017–2020)
 
 </div>
 
-<div class="card">
+<div class="section">
+
 <h2>Keahlian</h2>
 
 <div class="skills">
@@ -247,48 +359,53 @@ Akuntansi Keuangan (2017–2020)
 <div class="skill">Microsoft Dynamics AX</div>
 <div class="skill">Accurate</div>
 <div class="skill">MYOB</div>
+<div class="skill">Perpajakan</div>
 <div class="skill">Rekonsiliasi Bank</div>
 <div class="skill">Cash Flow Management</div>
-<div class="skill">Laporan Keuangan</div>
 <div class="skill">Administrasi Keuangan</div>
-<div class="skill">Petty Cash Management</div>
-<div class="skill">Analisis Data</div>
+<div class="skill">Penjurnalan Akuntansi</div>
+<div class="skill">Analisis Laporan Keuangan</div>
+<div class="skill">Petty Cash & Non-Petty Cash</div>
+<div class="skill">Financial Reporting</div>
 
 </div>
 
 </div>
 
-<div class="card">
-<h2>Prestasi</h2>
+<div class="section">
+
+<h2>Pencapaian</h2>
+
+<div class="achievement">
+🏆 Berhasil mengajukan dan memperoleh persetujuan penambahan dana petty cash dari kantor pusat guna mendukung kelancaran operasional perusahaan.
+</div>
+
+<div class="achievement">
+🏆 Finalis 12 Besar Olimpiade Akuntansi Tingkat Sumatera Barat.
+</div>
+
+</div>
+
+<div class="open">
+
+<h2>Open To Work</h2>
 
 <p>
-🏆 Finalis 12 Besar Olimpiade Akuntansi Tingkat SMK Sumatera Barat
-yang diselenggarakan oleh Politeknik Negeri Padang.
+Terbuka untuk peluang karier di bidang Finance, Accounting, Tax, Audit, dan Administrasi Keuangan.
 </p>
-
-</div>
-
-<div class="card contact">
-<h2>Kontak</h2>
-
-<p>📧 riskijonaidi98@gmail.com</p>
-
-<p>
-💼
-<a href="https://www.linkedin.com/in/riski-jonaidi-8a0683337"
-target="_blank">
-LinkedIn Saya
-</a>
-</p>
-
-<p>📱 08527292732</p>
 
 </div>
 
 </div>
 
 <footer>
-© 2026 Riski Jonaidi, S.Akun | Portfolio Website
+
+<p><strong>Riski Jonaidi, S.Akun</strong></p>
+
+<p>Finance & Accounting Staff | Tax & Financial Administration</p>
+
+<p>📧 riskijonaidi98@gmail.com</p>
+
 </footer>
 
 </body>
